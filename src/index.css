@@ -1,0 +1,17 @@
+@import "tailwindcss";
+*{
+  font-family: "Playfair Display SC", serif;
+
+}
+.head_black{
+    background-color: rgba(0, 0, 0, 0.651);
+}
+.tshw,.tshwh1{
+    text-shadow: .1px .1px 3px white;
+}
+.tshw:hover{
+    text-shadow: .1px .1px 3px orangered;
+}
+.context{
+    cursor: context-menu;
+}
