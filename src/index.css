@@ -1,17 +1,52 @@
 @import "tailwindcss";
-*{
-  font-family: "Playfair Display SC", serif;
 
+* {
+    font-family: "Playfair Display SC", serif;
+     text-transform: none ;
 }
-.head_black{
+.head_black {
     background-color: rgba(0, 0, 0, 0.651);
 }
-.tshw,.tshwh1{
+.tshw,
+.tshwh1 {
     text-shadow: .1px .1px 3px white;
 }
-.tshw:hover{
+.tshw:hover {
     text-shadow: .1px .1px 3px orangered;
 }
-.context{
+.context {
     cursor: context-menu;
 }
+.yellow_anime {
+    animation: 1s linear infinite yellow_anime;
+}
+@keyframes yellow_anime {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+.yellow_anime_delay {
+    animation: 1s linear infinite yellow_anime_delay .5s;
+}
+@keyframes yellow_anime_delay {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+.s1{
+    background-color: rgb(19, 19, 19);
+}
+.box_sh:hover{
+    box-shadow: .1px .1px 7px 0px orangered;
+}
+
