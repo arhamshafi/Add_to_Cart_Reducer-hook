@@ -26,9 +26,9 @@ function Header() {
     return (
         <div className="w-full h-[40vh] md:h-[60vh] bg-[url('/header_bg.jpg')] bg-center bg-cover relative">
             <div className={`w-full h-full head_black absolute top-0 left-0 z-10  `}>
-                <div className={`w-full h-[60px] p-0 px-2 flex justify-between transition-all duration-200 ease-linear items-center md:px-6 fixed top-0 left-0 z-20 ${n_scroll ? "bg-black" : "bg-transparent"}`}>
+                <div className={`w-full h-[40px] sm:h-[60px] p-0 px-2 flex justify-between transition-all duration-200 ease-linear items-center md:px-6 fixed top-0 left-0 z-20 ${n_scroll ? "bg-black" : "bg-transparent"}`}>
 
-                    <div className='w-[170px] h-full flex items-center'> <img src={h_svg} alt="" /></div>
+                    <div className='w-[130px] md:w-[170px] h-full flex items-center'> <img src={h_svg} alt="" /></div>
 
                     <ul className='w-max jutify-center items-center gap-5 hidden md:flex '>
                         <li className='py-1 px-2 tshw text-white text-md font-bold cursor-pointer hover:text-yellow-500 transition-all duration-200 ease-linear tracking-[1px]'>Home</li>
