@@ -14,10 +14,10 @@ function Section() {
             <div className='w-full md:w-[30%] px-4 lg:px-8 md:block '>
                 <h1 className='text-5xl md:text-3xl font-bold text-white text-center md:text-left tshwh1 context tracking-[2px]'>Collection</h1>
                 <div className='w-full h-max py-2 mt-8'>
-                    <p className='w-max cursor-pointer mx-auto md:m-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Home Decoration</p>
-                    <p className='w-max cursor-pointer mx-auto md:m-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Indoor Decoration</p>
-                    <p className='w-max cursor-pointer mx-auto md:m-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Office Decoration</p>
-                    <p className='w-max cursor-pointer mx-auto md:m-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Outdoor Decoration</p>
+                    <p className='w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Home Decoration</p>
+                    <p className='w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Indoor Decoration</p>
+                    <p className='w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Office Decoration</p>
+                    <p className='w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Outdoor Decoration</p>
                 </div>
                 <h1 className='text-3xl context tshwh1 mt-12 font-bold text-white md:block hidden tracking-[1px]'>Filter By Price</h1>
                 <div className='w-full h-[5px] bg-yellow-600 mt-8 relative md:block hidden'>
@@ -31,7 +31,7 @@ function Section() {
                 {
                     data.map((ele, idx) => {
                         return (
-                            <div key={idx} className=' w-[80%]  sm:w-[47%] lg:w-[30%] h-max py-2 mt-4 group cursor-pointer'>
+                            <div key={idx} className=' w-[80%]  sm:w-[47%] lg:w-[30%] h-max py-2 mt-4 group context'>
                                 <div className='w-full rounded-xl h-[300px] relative overflow-hidden'>
                                     <img
                                         className='absolute top-0 left-0 w-full h-full rounded-2xl object-fit transition-opacity duration-300 ease-linear'
@@ -46,9 +46,9 @@ function Section() {
                                     />
                                     <div className="absolute inset-0 w-full h-full z-10 crt_div bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-linear flex justify-end items-center text-white">
                                         <div className='w-[45px] h-full '>
-                                            <SlLike className='text-white text-2xl mt-12 hover:text-yellow-600 transition-all duration-300 ease-linear' />
-                                            <GiWarlockEye className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear' />
-                                            <HiMiniShoppingCart className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear' /></div>
+                                            <SlLike className='text-white text-2xl mt-12 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' />
+                                            <GiWarlockEye className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' />
+                                            <HiMiniShoppingCart className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' /></div>
                                     </div>
                                 </div>
 
