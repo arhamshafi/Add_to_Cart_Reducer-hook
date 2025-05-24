@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-* {
-    font-family: "Playfair Display SC", serif;
-    text-transform: none;
-}
+    * {
+        font-family: "Playfair Display SC", serif;
+        text-transform: none;
+    }
 
 .head_black {
     background-color: rgba(0, 0, 0, 0.651);
@@ -11,11 +11,11 @@
 
 .tshw,
 .tshwh1 {
-    text-shadow: .1px .1px 3px white;
+    text-shadow: .1px .1px 1px white;
 }
 
 .tshw:hover {
-    text-shadow: .1px .1px 3px orangered;
+    text-shadow: .1px .1px 1px orangered;
 }
 
 .context {
@@ -63,4 +63,13 @@
 }
 .crt_div{
     background-color: rgba(0, 0, 0, 0.685);
+}
+@media screen and (max-width:400px) {
+        .sec_img{
+            height: 300px;
+            width: 100%;
+        }
+        .f_img{
+            height: 250px;
+        }
 }

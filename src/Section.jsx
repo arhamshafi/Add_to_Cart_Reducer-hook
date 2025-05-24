@@ -3,6 +3,7 @@ import { GoNorthStar } from "react-icons/go";
 import { SlLike } from "react-icons/sl";
 import { GiWarlockEye } from "react-icons/gi";
 import { HiMiniShoppingCart } from "react-icons/hi2";
+import sec_1_img from "/10.jpg"
 import data from './data';
 
 function Section() {
@@ -10,29 +11,46 @@ function Section() {
 
     return (
 
-        <div className="w-full s1 py-20 flex flex-wrap">
-            <div className='w-full md:w-[30%] px-4 lg:px-8 md:block '>
+        <div className="w-full s1  py-7 lg:py-20 flex flex-wrap ">
+            {/* /////////////// */}
+            <div className='w-full md:w-[30%] px-4 lg:px-8 md:block order-2 md:order-1 mt-12 md:mt-0'>
                 <h1 className='text-5xl md:text-3xl font-bold text-white text-center md:text-left tshwh1 context tracking-[2px]'>Collection</h1>
-                <div className='w-full h-max py-2 mt-8'>
-                    <p className='w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Home Decoration</p>
-                    <p className='w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Indoor Decoration</p>
-                    <p className='w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Office Decoration</p>
-                    <p className='w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-xl md:text-md text-white tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]'><GoNorthStar className='hidden md:block' /> Outdoor Decoration</p>
+                <div className='w-full h-max py-2 mt-8 font-light'>
+                    <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
+                        fontFamily: 'Poppins, sans-serif',
+                        fontWeight: 300
+                    }} ><GoNorthStar className='hidden md:block' /> Home Decoration</p>
+                    <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
+                        fontFamily: 'Poppins, sans-serif',
+                        fontWeight: 300
+                    }}  ><GoNorthStar className='hidden md:block' /> Indoor Decoration</p>
+                    <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
+                        fontFamily: 'Poppins, sans-serif',
+                        fontWeight: 300
+                    }}  ><GoNorthStar className='hidden md:block' /> Office Decoration</p>
+                    <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
+                        fontFamily: 'Poppins, sans-serif',
+                        fontWeight: 300
+                    }}  ><GoNorthStar className='hidden md:block' /> Outdoor Decoration</p>
                 </div>
                 <h1 className='text-3xl context tshwh1 mt-12 font-bold text-white md:block hidden tracking-[1px]'>Filter By Price</h1>
                 <div className='w-full h-[5px] bg-yellow-600 mt-8 relative md:block hidden'>
                     <div className='w-[20px] h-[20px] bg-black border-1 border-white rounded-full absolute top-[-8px] left-[-2px]'></div>
                     <div className='w-[20px] h-[20px] bg-black border-1 border-white rounded-full absolute top-[-8px] right-[-2px]'></div>
                 </div>
-                <p className='text-gray-400 text-2xl mt-7 font-bold context md:block hidden'>Price : $ 180 ___ $ 367 </p>
+                <p className='text-gray-400 text-xl mt-7  context md:block hidden' >Price : $ 180 ___ $ 367 </p>
                 <button className='border-1 block md:mx-0 mx-auto border-yellow-600 text-yellow-600 cursor-pointer transition-all duration-200 ease-linear hover:bg-yellow-700 hover:text-white box_sh hover:scale-110 active:scale-100 rounded-2xl w-[70%] md:w-max  py-2 px-6 text-2xl mt-8'>Filter</button>
+
+                <div className='w-[90%] mx-auto md:mx-0 mt-12'><img src={sec_1_img} alt="" /></div>
+
             </div>
-            <div className='w-full md:w-[70%] border-0 md:border-l-white border-l py-2 px-3 flex justify-center items-center flex-wrap gap-3 xl:gap-6'>
+            {/* //////////////////////// */}
+            <div className='w-full md:w-[70%] order-1 md:order-2 border-0 md:border-l-white border-l py-2 px-3 flex justify-center items-center flex-wrap gap-3 xl:gap-6'>
                 {
                     data.map((ele, idx) => {
                         return (
                             <div key={idx} className=' w-[80%]  sm:w-[47%] lg:w-[30%] h-max py-2 mt-4 group context'>
-                                <div className='w-full rounded-xl h-[300px] relative overflow-hidden'>
+                                <div className='w-full rounded-xl sec_img h-[400px] sm:h-[300px] relative overflow-hidden'>
                                     <img
                                         className='absolute top-0 left-0 w-full h-full rounded-2xl object-fit transition-opacity duration-300 ease-linear'
                                         src={ele.img1}
