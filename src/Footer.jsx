@@ -84,12 +84,12 @@ function Footer() {
 
                 </div>
                 <div className='w-[95%] mx-auto md:mx-0 sm:w-[60%] md:w-[50%] mt-8 lg:mt-0 lg:w-[29%] f_img h-[350px] sm:h-[270px] flex flex-wrap justify-between items-center'>
-                    <div className='w-[30%] h-[40%] overflow-hidden group rounded-lg'><img className='hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img2} alt="" /></div>
-                    <div className='w-[30%] h-[40%] overflow-hidden group rounded-lg'><img className='hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img1} alt="" /></div>
-                    <div className='w-[30%] h-[40%] overflow-hidden group rounded-lg'><img className='hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img3} alt="" /></div>
-                    <div className='w-[30%] h-[40%] overflow-hidden group rounded-lg'><img className='hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img4} alt="" /></div>
-                    <div className='w-[30%] h-[40%] overflow-hidden group rounded-lg'><img className='hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img5} alt="" /></div>
-                    <div className='w-[30%] h-[40%] overflow-hidden group rounded-lg'><img className='hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img6} alt="" /></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img2} alt="" /></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img1} alt="" /></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img3} alt="" /></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img4} alt="" /></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img5} alt="" /></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img6} alt="" /></div>
                 </div>
             </div>
             <div className='w-[90%] border-t pt-2 mx-auto mt-8 flex justify-center items-center gap-6'>

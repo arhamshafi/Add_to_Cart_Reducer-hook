@@ -26,7 +26,7 @@ function Header() {
     return (
         <div className="w-full h-[40vh] md:h-[60vh] bg-[url('/header_bg.jpg')] bg-center bg-cover relative">
             <div className={`w-full h-full head_black absolute top-0 left-0 z-10  `}>
-                <div className={`w-full h-[40px] sm:h-[60px] p-0 px-2 flex justify-between transition-all duration-200 ease-linear items-center md:px-6 fixed top-0 left-0 z-20 ${n_scroll ? "bg-black" : "bg-transparent"}`}>
+                <div className={`w-full h-[40px] navbar sm:h-[60px] p-0 px-2 flex justify-between transition-all duration-200 ease-linear items-center md:px-6 fixed top-0 left-0 z-20 ${n_scroll ? "bg-black" : "bg-transparent"}`}>
 
                     <div className='w-[130px] md:w-[170px] h-full flex items-center'> <img src={h_svg} alt="" /></div>
 
@@ -44,8 +44,9 @@ function Header() {
                     </div>
                     <button className='py-2 px-2 bg-black hover:text-yellow-500 transition-all duration-200 ease-linear cursor-pointer active:scale-90 block md:hidden text-white rounded-sm'><FaBarsStaggered /></button>
                 </div>
-                <h1 className='text-center tshwh1 context text-white tracking-[2px] text-4xl md:text-6xl mt-23 md:mt-35 xl:mt-40'>SHOP</h1>
-                <div className='w-max mx-auto mt-6 flex items-center gap-2 context text-white'> <p className='transition-all cursor-pointer duration-200 ease-linear hover:text-yellow-500'>Home</p> / Shop </div>
+                {/* ////////////////////////// */}
+                <h1 className='text-center tshwh1 context h-anime text-white tracking-[2px] text-4xl md:text-6xl mt-23 md:mt-35 xl:mt-40'>SHOP</h1>
+                <div className='w-max mx-auto mt-6 flex h-anime items-center gap-2 context text-white'> <p className='transition-all cursor-pointer duration-200 ease-linear hover:text-yellow-500'>Home</p> / Shop </div>
 
                 <div className='w-[50px] h-[50px]  rounded-full absolute top-[33%] left-[22%] border-yellow-600 border-4 hidden lg:block '>
                     <div className='w-full h-full absolute rounded-full  text-xl text-yellow-600 flex justify-center items-center'><FaPlus /></div>

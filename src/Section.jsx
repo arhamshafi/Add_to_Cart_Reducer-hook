@@ -13,22 +13,22 @@ function Section() {
 
         <div className="w-full s1  py-7 lg:py-20 flex flex-wrap ">
             {/* /////////////// */}
-            <div className='w-full md:w-[30%] px-4 lg:px-8 md:block order-2 md:order-1 mt-12 md:mt-0'>
-                <h1 className='text-5xl md:text-3xl font-bold text-white text-center md:text-left tshwh1 context tracking-[2px]'>Collection</h1>
-                <div className='w-full h-max py-2 mt-8 font-light'>
-                    <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
+            <div className='w-full md:w-[30%] px-4 lg:px-8 md:block order-2 md:order-1 mt-12 md:mt-0 '>
+                <h1 className='text-5xl md:text-3xl font-bold text-white left_anime1 text-center md:text-left tshwh1 context tracking-[2px]'>Collection</h1>
+                <div className='w-full h-max py-2 mt-8 font-light '>
+                    <p className=' w-max cursor-pointer mx-auto left_anime2 md:mx-0 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
                         fontFamily: 'Poppins, sans-serif',
                         fontWeight: 300
                     }} ><GoNorthStar className='hidden md:block' /> Home Decoration</p>
-                    <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
+                    <p className=' w-max cursor-pointer mx-auto md:mx-0 left_anime3 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
                         fontFamily: 'Poppins, sans-serif',
                         fontWeight: 300
                     }}  ><GoNorthStar className='hidden md:block' /> Indoor Decoration</p>
-                    <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
+                    <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 left_anime4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
                         fontFamily: 'Poppins, sans-serif',
                         fontWeight: 300
                     }}  ><GoNorthStar className='hidden md:block' /> Office Decoration</p>
-                    <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
+                    <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] left_anime5 flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
                         fontFamily: 'Poppins, sans-serif',
                         fontWeight: 300
                     }}  ><GoNorthStar className='hidden md:block' /> Outdoor Decoration</p>
@@ -49,7 +49,7 @@ function Section() {
                 {
                     data.map((ele, idx) => {
                         return (
-                            <div key={idx} className=' w-[80%]  sm:w-[47%] lg:w-[30%] h-max py-2 mt-4 group context'>
+                            <div key={idx} className=' w-[80%]  sm:w-[47%] lg:w-[30%] h-max py-2 mt-4 group context box_anime'>
                                 <div className='w-full rounded-xl sec_img h-[400px] sm:h-[300px] relative overflow-hidden'>
                                     <img
                                         className='absolute top-0 left-0 w-full h-full rounded-2xl object-fit transition-opacity duration-300 ease-linear'
