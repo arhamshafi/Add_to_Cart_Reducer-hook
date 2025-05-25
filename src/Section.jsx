@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { GoNorthStar } from "react-icons/go";
 import { SlLike } from "react-icons/sl";
 import { GiWarlockEye } from "react-icons/gi";
 import { HiMiniShoppingCart } from "react-icons/hi2";
 import sec_1_img from "/10.jpg"
 import data from './data';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Section() {
 
+
+ useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+    AOS.refresh();
+  }, []);
 
     return (
 
@@ -19,19 +29,19 @@ function Section() {
                     <p className=' w-max cursor-pointer mx-auto left_anime2 md:mx-0 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
                         fontFamily: 'Poppins, sans-serif',
                         fontWeight: 300
-                    }} ><GoNorthStar className='hidden md:block' /> Home Decoration</p>
+                    }} data-aos="fade-up"  data-aos-duration="2000" ><GoNorthStar className='hidden md:block' /> Home Decoration</p>
                     <p className=' w-max cursor-pointer mx-auto md:mx-0 left_anime3 mt-4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
                         fontFamily: 'Poppins, sans-serif',
                         fontWeight: 300
-                    }}  ><GoNorthStar className='hidden md:block' /> Indoor Decoration</p>
+                    }} data-aos="fade-up"  data-aos-duration="2000" ><GoNorthStar className='hidden md:block' /> Indoor Decoration</p>
                     <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 left_anime4 h-[30px] flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
                         fontFamily: 'Poppins, sans-serif',
                         fontWeight: 300
-                    }}  ><GoNorthStar className='hidden md:block' /> Office Decoration</p>
+                    }} data-aos="fade-up"  data-aos-duration="2000" ><GoNorthStar className='hidden md:block' /> Office Decoration</p>
                     <p className=' w-max cursor-pointer mx-auto md:mx-0 mt-4 h-[30px] left_anime5 flex items-center text-md md:text-md text-gray-400  tshw hover:text-yellow-600 transition-all duration-150 ease-linear  gap-3 tracking-[1px]' style={{
                         fontFamily: 'Poppins, sans-serif',
                         fontWeight: 300
-                    }}  ><GoNorthStar className='hidden md:block' /> Outdoor Decoration</p>
+                    }} data-aos="fade-up"  data-aos-duration="2000" ><GoNorthStar className='hidden md:block' /> Outdoor Decoration</p>
                 </div>
                 <h1 className='text-3xl context tshwh1 mt-12 font-bold text-white md:block hidden tracking-[1px]'>Filter By Price</h1>
                 <div className='w-full h-[5px] bg-yellow-600 mt-8 relative md:block hidden'>
@@ -49,7 +59,7 @@ function Section() {
                 {
                     data.map((ele, idx) => {
                         return (
-                            <div key={idx} className=' w-[80%]  sm:w-[47%] lg:w-[30%] h-max py-2 mt-4 group context box_anime'>
+                            <div key={idx} className=' w-[80%]  sm:w-[47%] lg:w-[30%] h-max py-2 mt-4 group context box_anime' data-aos="fade-up"  data-aos-duration="2000" >
                                 <div className='w-full rounded-xl sec_img h-[400px] sm:h-[300px] relative overflow-hidden'>
                                     <img
                                         className='absolute top-0 left-0 w-full h-full rounded-2xl object-fit transition-opacity duration-300 ease-linear'
