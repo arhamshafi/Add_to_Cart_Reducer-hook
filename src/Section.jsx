@@ -2,22 +2,22 @@ import React, { useEffect } from 'react'
 import { GoNorthStar } from "react-icons/go";
 import { SlLike } from "react-icons/sl";
 import { GiWarlockEye } from "react-icons/gi";
-import { HiMiniShoppingCart } from "react-icons/hi2";
+import { FaCartPlus } from "react-icons/fa";
 import sec_1_img from "/10.jpg"
 import data from './data';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function Section() {
+function Section({ dispatch }) {
 
 
- useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-    });
-    AOS.refresh();
-  }, []);
+    function add_to_cart(product){
+        dispatch({
+            type : "add" , payload : product
+        })
+    }
+
+    
 
     return (
 
@@ -76,7 +76,8 @@ function Section() {
                                         <div className='w-[45px] h-full '>
                                             <SlLike className='text-white text-2xl mt-12 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' />
                                             <GiWarlockEye className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' />
-                                            <HiMiniShoppingCart className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' /></div>
+                                            <FaCartPlus className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' onClick={()=>add_to_cart(ele)}/>
+                                            </div>
                                     </div>
                                 </div>
 

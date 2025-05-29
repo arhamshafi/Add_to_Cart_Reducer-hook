@@ -25,10 +25,10 @@ function Footer() {
                     <div className='w-[150px]'><img src={h_svg} alt="" /></div>
                     <p className='w-full text-white text-xl lg:text-lg tshw2'>Proin a interdum elit. Etiam eu sapien sem. Suspendisse a massa justo. Cras eget lorem nunc. Fusce nec urna tempus tempus</p>
                     <div className='w-[200px] h-[30px] text-2xl flex justify-between items-center'>
-                        <FaInstagram  className='hover:text-orange-400 cursor-pointer'/>
-                        <FaTwitter className='hover:text-gray-600 cursor-pointer'/>
-                        <SiGmail className='hover:text-red-600 cursor-pointer'/>
-                        <FaWhatsapp className='hover:text-green-600 cursor-pointer'/>
+                        <FaInstagram className='hover:text-orange-400 cursor-pointer' />
+                        <FaTwitter className='hover:text-gray-600 cursor-pointer' />
+                        <SiGmail className='hover:text-red-600 cursor-pointer' />
+                        <FaWhatsapp className='hover:text-green-600 cursor-pointer' />
 
                     </div>
                 </div>
@@ -73,31 +73,31 @@ function Footer() {
                         <p>Useful Links</p>
                         <FaPlus />
                     </div>
-                     <div className='w-full h-[50px] bg-gray-900 rounded-3xl mt-8 px-6 text-xl cursor-context-menu flex justify-between items-center text-white tshw2'>
+                    <div className='w-full h-[50px] bg-gray-900 rounded-3xl mt-8 px-6 text-xl cursor-context-menu flex justify-between items-center text-white tshw2'>
                         <p>Information</p>
                         <FaPlus />
                     </div>
-                     <div className='w-full h-[50px] bg-gray-900 rounded-3xl px-6 mt-8 text-xl cursor-context-menu flex justify-between items-center text-white tshw2'>
+                    <div className='w-full h-[50px] bg-gray-900 rounded-3xl px-6 mt-8 text-xl cursor-context-menu flex justify-between items-center text-white tshw2'>
                         <p>Support</p>
                         <FaPlus />
                     </div>
 
                 </div>
                 <div className='w-[95%] mx-auto md:mx-0 sm:w-[60%] md:w-[50%] mt-8 lg:mt-0 lg:w-[29%] f_img h-[350px] sm:h-[270px] flex flex-wrap justify-between items-center'>
-                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img2} alt="" /></div>
-                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img1} alt="" /></div>
-                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img3} alt="" /></div>
-                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img4} alt="" /></div>
-                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img5} alt="" /></div>
-                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'> <div className='w-full opacity-0 z-10 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div> <img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full ' src={f_img6} alt="" /></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'><img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full absolute ' src={f_img2} alt="" /><div className='w-full opacity-0 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'><img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full absolute ' src={f_img1} alt="" /><div className='w-full opacity-0 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'><img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full absolute ' src={f_img3} alt="" /><div className='w-full opacity-0 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'><img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full absolute ' src={f_img4} alt="" /><div className='w-full opacity-0 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'><img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full absolute ' src={f_img5} alt="" /><div className='w-full opacity-0 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div></div>
+                    <div className='w-[30%] group h-[40%] overflow-hidden rounded-lg relative'><img className='group-hover:scale-115 transition-all duration-200 ease-out  w-full h-full absolute ' src={f_img6} alt="" /><div className='w-full opacity-0 group-hover:opacity-70 h-full bg-black transition-opacity duration-300 ease-out  absolute'></div></div>
                 </div>
             </div>
             <div className='w-[90%] border-t pt-2 mx-auto mt-8 flex justify-center items-center gap-6'>
-                    <img className='w-[40px]' src={amex} alt="" />
-                    <img className='w-[40px]' src={apay} alt="" />
-                    <img className='w-[40px]' src={skrill} alt="" />
-                    <img className='w-[40px]' src={paypal} alt="" />
-                    <img className='w-[40px]' src={visa} alt="" />
+                <img className='w-[40px]' src={amex} alt="" />
+                <img className='w-[40px]' src={apay} alt="" />
+                <img className='w-[40px]' src={skrill} alt="" />
+                <img className='w-[40px]' src={paypal} alt="" />
+                <img className='w-[40px]' src={visa} alt="" />
             </div>
         </div>
     )

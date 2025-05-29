@@ -66,78 +66,130 @@
     background-color: rgba(0, 0, 0, 0.685);
 }
 
-.navbar{
+.navbar {
     opacity: 0;
-    animation:  1s nav_anime forwards ease .5s ;
+    animation: 1s nav_anime forwards ease .5s;
 }
-@keyframes nav_anime{
-    from{
+
+@keyframes nav_anime {
+    from {
         transform: translateY(-100%);
         opacity: 0;
     }
-    to{
-            transform: translateY(0);
-        opacity: 1;
-    }
-}
-.h-anime{
-     opacity: 0;
-    animation:  1s h_anime forwards ease .5s ;
-}
-@keyframes h_anime{
-    from{
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to{
-            transform: translateY(0);
-        opacity: 1;
-    }
-}
-.box_anime{
-    opacity:0;
-    animation: .5s box_anime ease-out .4s forwards;
-}
-@keyframes box_anime{
-    from{
-        opacity:0;
-        transform: scale(.5);
-    }
-    to{
-        transform: scale(1);
-        opacity:1;
-    }
-}
-.left_anime1{
-    opacity: 0;
-    animation: .8s left_anime ease forwards;
-}
-.left_anime2{
-    opacity: 0;
-    animation: .8s left_anime ease forwards .3s;
-}
-.left_anime3{
-    opacity: 0;
-    animation: .8s left_anime ease forwards .6s;
-}
-.left_anime4{
-    opacity: 0;
-    animation: .8s left_anime ease forwards .9s;
-}
-.left_anime5{
-    opacity: 0;
-    animation: .8s left_anime ease forwards 1.2s;
-}
-@keyframes left_anime{
-    from{
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    to{
+
+    to {
         transform: translateY(0);
         opacity: 1;
     }
 }
+
+.h-anime {
+    opacity: 0;
+    animation: 1s h_anime forwards ease .5s;
+}
+
+@keyframes h_anime {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.box_anime {
+    opacity: 0;
+    animation: .5s box_anime ease-out .4s forwards;
+    
+}
+
+@keyframes box_anime {
+    from {
+        opacity: 0;
+        transform: scale(.5);
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.left_anime1 {
+    opacity: 0;
+    animation: .8s left_anime ease forwards;
+}
+
+.left_anime2 {
+    opacity: 0;
+    animation: .8s left_anime ease forwards .3s;
+}
+
+.left_anime3 {
+    opacity: 0;
+    animation: .8s left_anime ease forwards .6s;
+}
+
+.left_anime4 {
+    opacity: 0;
+    animation: .8s left_anime ease forwards .9s;
+}
+.bxshy{
+    box-shadow: .1px .1px 3px orange;
+}
+.tshg{
+    text-shadow: .1px .1px 1px green;
+}
+
+.left_anime5 {
+    opacity: 0;
+    animation: .8s left_anime ease forwards 1.2s;
+}
+
+@keyframes left_anime {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.scrl{
+    overflow-y: auto;
+
+}
+
+
+.scrl::-webkit-scrollbar {
+    width: 1px;
+}
+
+.scrl::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrl::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
 
 
 

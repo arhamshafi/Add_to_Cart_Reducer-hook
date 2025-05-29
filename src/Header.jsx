@@ -5,10 +5,24 @@ import { CgProfile } from "react-icons/cg";
 import { IoMdCart } from "react-icons/io";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa";
+import { RxCross1 } from "react-icons/rx";
+import { BsCart3 } from "react-icons/bs";
+import { FaMinus } from "react-icons/fa6";
+import { MdDelete } from "react-icons/md";
+import Reducer_f from './Reducer_f';
 
-function Header() {
+
+function Header({ state }) {
 
     let [n_scroll, setn_scroll] = useState(false)
+    let [side_bar, setside_bar] = useState(false)
+
+    // console.log(state);
+    
+
+
+
+
     useEffect(() => {
 
         function navscrol() {
@@ -40,10 +54,39 @@ function Header() {
                     <div className='w-max justify-center items-center gap-5  hidden md:flex'>
                         <FiSearch className='text-2xl tshw text-white cursor-pointer hover:text-yellow-500 transition-all duration-200 ease-linear active:scale-90' />
                         <CgProfile className='text-2xl tshw text-white cursor-pointer hover:text-yellow-500 transition-all duration-200 ease-linear active:scale-90' />
-                        <IoMdCart className='text-2xl tshw text-white cursor-pointer hover:text-yellow-500 transition-all duration-200 ease-linear active:scale-90' />
+                        <IoMdCart className='text-2xl tshw text-white cursor-pointer hover:text-yellow-500 transition-all duration-200 ease-linear active:scale-90' onClick={() => setside_bar(true)} />
                     </div>
-                    <button className='py-2 px-2 bg-black hover:text-yellow-500 transition-all duration-200 ease-linear cursor-pointer active:scale-90 block md:hidden text-white rounded-sm'><FaBarsStaggered /></button>
+                    <button className='py-2 px-2 bg-black hover:text-yellow-500 transition-all duration-200 ease-linear cursor-pointer active:scale-90 block md:hidden text-white rounded-sm' onClick={() => setside_bar(true)}><FaBarsStaggered /></button>
                 </div>
+
+
+                <div className={`w-full h-screen bg-black fixed z-30 top-0 left-0 transition-all duration-200 ease-linear ${side_bar ? "opacity-60 visible" : "opacity-0 invisible"} `}></div>
+                <div className={`fixed top-0 transition-all duration-300 ease-out ${side_bar ? "right-0" : "right-[-400px]"} z-50 h-screen w-[300px] sm:w-[400px] bg-neutral-800`}>
+                    <RxCross1 className='absolute top-5 right-3 text-2xl text-white hover:text-red-500 cursor-pointer ' onClick={() => setside_bar(false)} />
+                    <div className='flex text-xl items-center gap-3 text-white mt-8 ml-3 tracking-[2px] tshwh1 cursor-context-menu'> <BsCart3 className='text-4xl text-yellow-600 tshy' /> <p>Your Cart Items</p> </div>
+                    <div className='w-[90%] mx-auto h-[355px] mt-12 scrl pb-4'>
+                        <div className='w-full bg-white mt-4 rounded-lg h-[100px] flex justify-evenly items-center '>
+                            <div className='w-[25%] rounded-lg h-[80%]'></div>
+                            <div className='w-[65%] rounded-lg h-[80%] px-3 relative'>
+                                <h1 className='text-black text-lg cursor-context-menu'>name</h1>
+                                <p className='text-gray-600 text-md mt-0 cursor-context-menu'>each-price $$$</p>
+                                <div className='w-[32%] mt-1 flex justify-between items-center h-[25px] rounded-lg '>
+                                    <FaPlus className='text-sm text-yellow-600 cursor-pointer' />
+                                    <p className='text-black text-md font-bold cursor-context-menu'>89</p>
+                                    <FaMinus className='text-sm text-yellow-600 cursor-pointer' />
+                                </div>
+                                <MdDelete className='absolute top-[44%] cursor-pointer text-xl text-red-500 right-2.5' />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='w-[90%] h-[70px] bg-yellow-600 bxshy rounded-lg mx-auto mt-8 px-4 flex justify-center items-center font-bold'>
+                        <h1 className='text-white text-2xl text cursor-context-menu'>Total Amount : </h1>
+                        <h1 className='text-green-700 text-xl font-bold ml-2 tshg cursor-context-menu'>10000$</h1>
+                    </div>
+                </div>
+
+
                 {/* ////////////////////////// */}
                 <h1 className='text-center tshwh1 context h-anime text-white tracking-[2px] text-4xl md:text-6xl mt-23 md:mt-35 xl:mt-40'>SHOP</h1>
                 <div className='w-max mx-auto mt-6 flex h-anime items-center gap-2 context text-white'> <p className='transition-all cursor-pointer duration-200 ease-linear hover:text-yellow-500'>Home</p> / Shop </div>
