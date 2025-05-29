@@ -8,7 +8,7 @@ import data from './data';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function Section({ dispatch }) {
+function Section({ dispatch, setside_bar }) {
 
 
     function add_to_cart(product) {
@@ -16,8 +16,6 @@ function Section({ dispatch }) {
             type: "add", payload: product
         })
     }
-
-
 
 
     return (
@@ -76,7 +74,7 @@ function Section({ dispatch }) {
                                     <div className="absolute inset-0 w-full h-full z-10 crt_div bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-linear flex justify-end items-center text-white">
                                         <div className='w-[45px] h-full '>
                                             <SlLike className='text-white text-2xl mt-12 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' />
-                                            <GiWarlockEye className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' />
+                                            <GiWarlockEye className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' onClick={() => setside_bar(true)} />
                                             <FaCartPlus className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' onClick={() => add_to_cart(ele)} />
                                         </div>
                                     </div>

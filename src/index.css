@@ -145,6 +145,20 @@
 .tshg {
     text-shadow: .1px .1px 1px green;
 }
+.dot_anime{
+    animation: dot_anime 1.2s ease-in infinite ;
+    
+}
+@keyframes dot_anime{
+    0%{
+        transform: scale(.9);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(2.4);
+        opacity: 0;
+    }
+}
 
 .left_anime5 {
     opacity: 0;
