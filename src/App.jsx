@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import React, { useEffect, useReducer } from 'react'
 import Header from './Header'
 import Section from './Section'
 import Footer from './Footer'
@@ -10,14 +10,12 @@ function App() {
     item: [],
     total_amount: 0
   }
+
   let [state, dispatch] = useReducer(Reducer_f, initial_value)
-  
-    console.log(state);
-    
 
   return (
     <>
-      <Header state={state} />
+      <Header state={state} dispatch={dispatch} />
       <Section dispatch={dispatch} />
       <Footer />
     </>

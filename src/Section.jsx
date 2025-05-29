@@ -11,13 +11,14 @@ import 'aos/dist/aos.css';
 function Section({ dispatch }) {
 
 
-    function add_to_cart(product){
+    function add_to_cart(product) {
         dispatch({
-            type : "add" , payload : product
+            type: "add", payload: product
         })
     }
 
-    
+
+
 
     return (
 
@@ -76,8 +77,8 @@ function Section({ dispatch }) {
                                         <div className='w-[45px] h-full '>
                                             <SlLike className='text-white text-2xl mt-12 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' />
                                             <GiWarlockEye className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' />
-                                            <FaCartPlus className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' onClick={()=>add_to_cart(ele)}/>
-                                            </div>
+                                            <FaCartPlus className='text-white text-2xl mt-6 hover:text-yellow-600 transition-all duration-300 ease-linear cursor-pointer' onClick={() => add_to_cart(ele)} />
+                                        </div>
                                     </div>
                                 </div>
 

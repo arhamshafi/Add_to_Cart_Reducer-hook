@@ -103,7 +103,7 @@
 .box_anime {
     opacity: 0;
     animation: .5s box_anime ease-out .4s forwards;
-    
+
 }
 
 @keyframes box_anime {
@@ -137,10 +137,12 @@
     opacity: 0;
     animation: .8s left_anime ease forwards .9s;
 }
-.bxshy{
+
+.bxshy {
     box-shadow: .1px .1px 3px orange;
 }
-.tshg{
+
+.tshg {
     text-shadow: .1px .1px 1px green;
 }
 
@@ -160,7 +162,8 @@
         opacity: 1;
     }
 }
-.scrl{
+
+.scrl {
     overflow-y: auto;
 
 }
